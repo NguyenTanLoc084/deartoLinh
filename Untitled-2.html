@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tỏ tình nhẹ nhàng</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 500px;
+      animation: slideUp 1s ease-out;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .heart {
+      color: red;
+      font-size: 30px;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes beat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Gửi chị ❤️</h1>
+    <p>
+      Tụi mình không còn học chung nữa, năm sau chị ra trường rồi và có lẽ sau này cũng sẽ ít gặp nhau hơn. <br><br>
+      Nên là em không muốn bỏ lỡ cơ hội để nói một điều mà em đã giữ trong lòng khá lâu rồi.
+    </p>
+    <p style="margin-top: 30px; font-weight: bold; font-size: 20px;">
+      EM THÍCH CHỊ. <br>Em chỉ muốn nói vậy thôi.
+    </p>
+    <div class="heart">❤️</div>
+  </div>
+</body>
+</html>
